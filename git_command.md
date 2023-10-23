@@ -3,7 +3,7 @@
     版本库：
         暂存区：Stage或者时Index
         分支：git自动创建的master分支
-        HEAD指针：只想master分支的指针
+        HEAD指针：指向master分支的指针
     git add命令实际上就是把要提交的所有修改放到暂存区（Stage），然后，执行git commit就可以一次性把暂存区的所有修改提交到分支
 
 2.版本回退：
@@ -12,8 +12,6 @@
     git reset --hard HEAD^：回退到上一个版本，^^这就是上两个版本，HEAD~number
     git reset --hard commit_id(前几位就行):直接回退或者穿梭到这个id对应的版本，
     git reflog:记录每一次命令,找到对应的修改的版本，比git log要丰富一点
-
-
 
 3.管理修改：git实际上管理的是修改而不是文件，增加，删除，修改，新建他都是“修改”；
            commit只能将暂存区的修改提交到版本库
