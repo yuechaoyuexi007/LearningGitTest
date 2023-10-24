@@ -9,9 +9,9 @@
 2.版本回退：
     git status:可以查看工作区的状态
     git log:展示提交历史记录（commit id这就是版本号,author,data,change）；git log --pretty=online美化输出(commit id,change)
+    git reflog:记录每一次命令,找到对应的修改的版本，比git log要丰富一点
     git reset --hard HEAD^：回退到上一个版本，^^这就是上两个版本，HEAD~number
     git reset --hard commit_id(前几位就行):直接回退或者穿梭到这个id对应的版本，
-    git reflog:记录每一次命令,找到对应的修改的版本，比git log要丰富一点
 
 3.管理修改：git实际上管理的是修改而不是文件，增加，删除，修改，新建他都是“修改”；
            commit只能将暂存区的修改提交到版本库
